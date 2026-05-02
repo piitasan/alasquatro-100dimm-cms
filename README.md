@@ -133,18 +133,6 @@ It serves as a **capstone output**, integrating:
 
 ---
 
-## 👨‍💻 Development Team
-
-<div align="center">
-
-**ALAS QUATRO**
-
-_Designing interactive experiences with purpose._
-
-</div>
-
----
-
 ## 📌 Repository Notes
 
 - This repository contains **website source code only**
