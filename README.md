@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌆 ALASQUATRO  
+# 🌆 ALAS QUATRO  
 ## *100 Days in Metro Manila – CMS Website*
 
 > *A narrative-driven digital platform supporting environmental awareness through interactive media.*
@@ -126,7 +126,7 @@ It serves as a **capstone output**, integrating:
 
 <div align="center">
 
-**ALASQUATRO**
+**ALAS QUATRO**
 
 *Designing interactive experiences with purpose.*
 
