@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <img src="public/assets/images/aq_logo.png" alt="Alas Quatro Logo" width="180"/>
+  <img src="public/assets/images/aq_logo.png" alt="Alas Quatro Logo" width="350"/>
 </p>
 
 ## _100 Days in Metro Manila – CMS Website_
