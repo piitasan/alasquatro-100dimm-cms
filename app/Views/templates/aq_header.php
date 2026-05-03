@@ -30,11 +30,13 @@
         </div>
 
         <div class="nav-icons d-flex align-items-center gap-2">
-          <a href="#" class="icon-pill"><i class="bi bi-search"></i></a>
-          <a href="#" class="icon-pill"><i class="bi bi-person-circle"></i></a>
+          <a href="#" class="icon-pill icon-search"><i class="bi bi-search"></i></a>
+          <a href="#" class="icon-pill icon-profile"><i class="bi bi-person-circle"></i></a>
         </div>
       </div>
     </nav>
   </header>
+  <div class="aq-nav-backdrop" id="aqNavBackdrop"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

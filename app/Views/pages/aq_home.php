@@ -17,22 +17,22 @@
   <div class="aq-section-inner">
     <h2 class="aq-section-title">100 DAYS IN METRO MANILA</h2>
     <p class="aq-section-desc">
-      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-      eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum.”
+      “100 Days in Metro Manila follows an ex-deity who has lost their mortality after angering the God of All, and is casted into a post-polluted Metro Manila as punishment where it is a world shaped by prolonged human neglect. The ex-deity must restore the devastated city within a limited timeframe of one hundred (100) days as an act of redemption.”
     </p>
-    <a href="#" class="aq-download-btn">
+    <a href="https://drive.google.com/file/d/1v7Ny2z94hJeSZwlJRWM18OCtoqu7SCPq/view?usp=drive_link" class="aq-download-btn" target="_blank" rel="noopener noreferrer">
       Download 100 Days in Metro Manila <span class="aq-download-arrow">→</span>
     </a>
 
     <div class="aq-video-block">
       <div class="aq-video-caption">The DEVS played 100 Days in Metro Manila | YouTube</div>
       <div class="aq-video-embed">
-        <div class="aq-video-play-lg">
-          <i class="bi bi-play-fill"></i>
-        </div>
+        <iframe
+          src="https://www.youtube.com/embed/nNJkh92SwUk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   </div>
@@ -43,13 +43,15 @@
     <div class="aq-docs-frame">
       <div class="aq-docs-header">
         <span>Game Design Document | Google Drive</span>
-        <a href="#" class="aq-docs-link" aria-label="Open in new tab">
+        <a href="/assets/documents/aq_gdd_v1.pdf" class="aq-docs-link" target="_blank" rel="noopener">
           <i class="bi bi-box-arrow-up-right"></i>
         </a>
       </div>
 
       <div class="aq-docs-body">
-        <!--  to be replace with iframe later -->
+        <a href="/assets/documents/aq_gdd_v1.pdf" target="_blank" rel="noopener" class="aq-docs-preview">
+          <img src="/assets/images/aq_logo.png" alt="Game Design Document Preview">
+        </a>
       </div>
     </div>
   </div>

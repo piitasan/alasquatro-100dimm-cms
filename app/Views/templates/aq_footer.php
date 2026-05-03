@@ -15,3 +15,23 @@
     </div>
   </div>
 </footer>
+
+<script>
+  const nav = document.getElementById('aqNavbar');
+  const backdrop = document.getElementById('aqNavBackdrop');
+
+  nav.addEventListener('shown.bs.collapse', () => {
+    backdrop.style.opacity = '1';
+    backdrop.style.pointerEvents = 'auto';
+  });
+
+  nav.addEventListener('hidden.bs.collapse', () => {
+    backdrop.style.opacity = '0';
+    backdrop.style.pointerEvents = 'none';
+  });
+
+  backdrop.addEventListener('click', () => {
+    const bsCollapse = bootstrap.Collapse.getInstance(nav);
+    if (bsCollapse) bsCollapse.hide();
+  });
+</script>

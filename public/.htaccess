@@ -47,3 +47,9 @@ Options -Indexes
 # Disable server signature start
 ServerSignature Off
 # Disable server signature end
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.pdf$">
+    Header set Content-Type application/pdf
+  </FilesMatch>
+</IfModule>

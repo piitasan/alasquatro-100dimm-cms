@@ -35,6 +35,8 @@ header {
 .aq-header {
     background-color: var(--dark-green);
     padding: 14px 0;
+    position: relative;
+    z-index: 50;
 }
 
 .aq-header .navbar {
@@ -305,7 +307,7 @@ footer {
 }
 
 .aq-section-inner {
-    width: min(1100px, 90%);
+    width: min(1100px, 92%);
     margin: 0 auto;
     text-align: center;
 }
@@ -355,12 +357,17 @@ footer {
 }
 
 .aq-video-embed {
-    height: 260px;
-    background: #1b3434;
+    width: 100%;
+    height: min(70vh, 520px);
     border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
+}
+
+.aq-video-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
 }
 
 .aq-video-play-lg {
@@ -413,6 +420,192 @@ footer {
 
 .aq-docs-body {
     height: calc(100% - 28px);
-    background: #1b3434; /* subtle inner tone */
+    background: #1b3434;
     border-radius: 4px;
+    overflow: hidden;
+}
+
+.aq-docs-iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.aq-docs-preview {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.aq-docs-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.9);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.aq-docs-preview:hover img {
+    transform: scale(1.02);
+    filter: brightness(1);
+}
+
+.aq-docs-cta {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(0,0,0,0.5);
+    color: var(--text-color);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+/* Shared container */
+.aq-section-inner {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+/* Hero */
+.aq-hero {
+    min-height: 100svh; /* more reliable on mobile */
+    padding: 16px 0 32px;
+}
+
+.aq-hero-inner {
+    transform: translateY(-24px);
+}
+
+.aq-hero-frame {
+    aspect-ratio: 16 / 9;
+    height: auto; /* let aspect-ratio handle it */
+}
+
+/* Video embed */
+.aq-video-embed {
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .aq-hero {
+        min-height: auto;
+        padding: 32px 0 24px;
+        align-items: flex-start;
+    }
+
+    .aq-hero-inner {
+        transform: none;
+        margin-top: 8px;
+    }
+
+    .aq-hero-title {
+        margin-bottom: 12px;
+    }
+
+    .aq-hero-frame {
+        border-radius: 10px;
+    }
+
+    .aq-navbar-pill {
+        height: auto;
+        padding: 8px 12px;
+    }
+
+    .aq-header .navbar {
+        height: auto;
+        position: relative;
+    }
+
+    .navbar-brand {
+        order: 1;
+    }
+
+    .nav-icons {
+        order: 2;
+        margin-left: auto;
+    }
+
+    .navbar-toggler {
+        order: 3;
+        margin-left: 8px;
+    }
+
+    .icon-search {
+        display: none; /* hide search on mobile */
+    }
+
+    .navbar-collapse {
+        order: 4;
+        width: 100%;
+        margin-top: 8px;
+        padding-top: 6px;
+        border-top: 1px solid rgba(255, 246, 239, 0.25);
+        text-align: center;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        gap: 6px;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .aq-hero {
+        padding: 12px 0 24px;
+    }
+
+    .aq-download-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+/* Keep navbar above backdrop */
+.aq-header {
+    position: relative;
+    z-index: 50;
+}
+
+/* Backdrop (dim) */
+.aq-nav-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+}
+
+/* Collapse panel as overlay */
+@media (max-width: 768px) {
+    .aq-navbar-pill {
+        position: relative;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        right: 0;
+        background: var(--light-green);
+        border-radius: 18px;
+        padding: 12px 10px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+        z-index: 20;
+    }
 }
