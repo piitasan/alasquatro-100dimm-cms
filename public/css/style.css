@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Brice Bold Condensed';
+    src: url('../assets/fonts/Brice Bold Condensed/Brice Bold Condensed.otf') format('opentype');
+}
+
+:root {
+    --dark-green: #1A3635;
+    --medium-green: #40534D;
+    --light-green: #687D6A;
+    --tan: #D5BD98;
+    --text-color: #FFF6EF;
+}
+
+body {
+    background-color: var(--dark-green);
+    color: var(--text-color);
+    font-family: 'Brice Bold Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--light-green);
+    padding: 15px 0;
+}
+
+.aq-header {
+    background-color: var(--dark-green);
+    padding: 14px 0;
+}
+
+.aq-header .navbar {
+    height: 64px;             /* set the navbar height you want */
+    align-items: center;      /* keep items vertically centered */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.navbar-brand .brand-text {
+    font-family: 'Brice Bold Condensed', serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+}
+
+.nav-menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Brice Bold Condensed', serif;
+    font-weight: 700;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    text-decoration: underline;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons a {
+    color: var(--text-color);
+    margin-left: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    padding: 20px;
+}
+
+.trailer-section {
+    background-color: var(--tan);
+    width: 80%;
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.trailer-section h1 {
+    color: var(--dark-green);
+    font-family: 'Brice Bold Condensed', serif;
+    font-size: 48px;
+    margin: 0;
+}
+
+.play-button {
+    display: inline-block;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--dark-green);
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 24px;
+    color: var(--dark-green);
+}
+
+/* Footer */
+footer {
+    background-color: var(--light-green);
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-logo .logo {
+     border: none;
+     padding: 0;
+     border-radius: 0;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo .logo-text {
+    font-family: 'Brice Bold Condensed', serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.social-icons a {
+    color: var(--text-color);
+    margin-left: 15px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.aq-nav .nav-link {
+    color: var(--text-color);
+    font-family: 'Brice Bold Condensed', serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 0 18px;
+    position: relative;
+}
+
+.aq-nav .nav-link.active::after,
+.aq-nav .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: -6px;
+    height: 3px;
+    background: var(--text-color);
+    border-radius: 999px;
+}
+
+.icon-pill {
+    width: 36px;
+    height: 36px;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 116px;
+    height: 73px;
+    object-fit: contain;
+    border: none;
+    border-radius: 0;
+}
+
+.aq-navbar-pill {
+    background-color: var(--light-green);
+    border: 2px solid var(--text-color);
+    border-radius: 999px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6px 18px;
+    height: 72px;
+    box-sizing: border-box;
+}
