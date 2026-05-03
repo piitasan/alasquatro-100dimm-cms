@@ -194,10 +194,11 @@ footer {
 }
 
 .icon-pill {
-    width: 36px;
-    height: 36px;
-    border: 2px solid var(--text-color);
-    border-radius: 50%;
+    border: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+    border-radius: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
