@@ -26,6 +26,7 @@ body {
     margin: 0 auto;
 }
 
+/* navbar */
 header {
     background-color: var(--light-green);
     padding: 15px 0;
@@ -37,8 +38,8 @@ header {
 }
 
 .aq-header .navbar {
-    height: 64px;             /* set the navbar height you want */
-    align-items: center;      /* keep items vertically centered */
+    height: 64px;          
+    align-items: center;      
 }
 
 .navbar {
@@ -91,41 +92,6 @@ header {
     text-decoration: none;
 }
 
-.main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    padding: 20px;
-}
-
-.trailer-section {
-    background-color: var(--tan);
-    width: 80%;
-    padding: 100px 20px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.trailer-section h1 {
-    color: var(--dark-green);
-    font-family: 'Brice Bold Condensed', serif;
-    font-size: 48px;
-    margin: 0;
-}
-
-.play-button {
-    display: inline-block;
-    margin-top: 20px;
-    width: 50px;
-    height: 50px;
-    border: 2px solid var(--dark-green);
-    border-radius: 50%;
-    line-height: 50px;
-    font-size: 24px;
-    color: var(--dark-green);
-}
-
 /* Footer */
 footer {
     background-color: var(--light-green);
@@ -173,6 +139,8 @@ footer {
 
 .aq-nav .nav-link {
     color: var(--text-color);
+    opacity: 0.75;
+    transition: opacity 0.2s ease, text-shadow 0.2s ease;
     font-family: 'Brice Bold Condensed', serif;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -181,8 +149,17 @@ footer {
     position: relative;
 }
 
-.aq-nav .nav-link.active::after,
-.aq-nav .nav-link:hover::after {
+.aq-nav .nav-link:hover {
+    opacity: 0.95;
+    text-shadow: 0 0 6px rgba(255, 246, 239, 0.35);
+}
+
+.aq-nav .nav-link.active {
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(255, 246, 239, 0.5);
+}
+
+.aq-nav .nav-link.active::after {
     content: '';
     position: absolute;
     left: 10px;
@@ -223,4 +200,53 @@ footer {
     padding: 6px 18px;
     height: 72px;
     box-sizing: border-box;
+}
+
+.aq-footer {
+    background-color: var(--light-green);
+    padding: 18px 0;
+}
+
+.aq-footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo-img {
+    width: 116px;
+    height: 73px;
+    object-fit: contain;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.footer-title {
+    font-family: 'Brice Bold Condensed', serif;
+    font-size: 22px;
+}
+
+.footer-copy {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+.footer-icons a {
+    color: var(--text-color);
+    font-size: 20px;
+    margin-left: 14px;
+    text-decoration: none;
 }
