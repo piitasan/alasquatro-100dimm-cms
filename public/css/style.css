@@ -1443,6 +1443,31 @@ a {
   transition: transform 0.5s ease;
 }
 
+.aq-about-card-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+.aq-about-card-photo.is-real {
+  opacity: 1;
+}
+
+.aq-about-card-photo.is-2d {
+  opacity: 0;
+}
+
+.aq-about-card:hover .aq-about-card-photo.is-real {
+  opacity: 0;
+}
+
+.aq-about-card:hover .aq-about-card-photo.is-2d {
+  opacity: 1;
+}
+
 .aq-about-card:hover .aq-about-card-media img {
   transform: scale(1.05);
 }

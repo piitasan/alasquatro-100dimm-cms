@@ -73,68 +73,64 @@
     <div class="aq-about-team-grid">
       <article class="aq-about-card">
         <div class="aq-about-card-media">
-          <img src="https://images.unsplash.com/photo-1758600587839-56ba05596c69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Ana Reyes">
+          <img class="aq-about-card-photo is-real" src="/assets/dev/images/aq_cruz.jpg" alt="Vincent Cruz">
+          <img class="aq-about-card-photo is-2d" src="/assets/dev/images/aq_cruz_2d.png" alt="Vincent Cruz 2D">
           <div class="aq-about-card-overlay"></div>
         </div>
         <div class="aq-about-card-body">
-          <h3>Ana Reyes</h3>
-          <p class="aq-about-card-role">Game Designer &amp; Project Lead</p>
+          <h3>Vincent Cruz</h3>
+          <p class="aq-about-card-role">Project Manager and 3D Artist: Items</p>
           <div class="aq-about-card-divider"></div>
           <p class="aq-about-card-desc">
-            Ana spearheads the creative and strategic direction of Alas Quatro. As Game Designer and Project Lead,
-            she conceptualized the narrative framework of 100 Days in Metro Manila, crafting the environmental
-            storytelling, quest design, and game mechanics that tie together the UN SDG themes with compelling gameplay.
+            Vincent oversees the entire project timeline, team coordination, and task distribution while also creating 3D models of in-game items such as weapons, tools, and collectibles. His organizational skills keep the team on track, while his item designs add depth and interactivity to the game world.
           </p>
         </div>
       </article>
 
       <article class="aq-about-card">
         <div class="aq-about-card-media">
-          <img src="https://images.unsplash.com/photo-1595017734643-07386d930c6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Marco Santos">
+          <img class="aq-about-card-photo is-real" src="/assets/dev/images/aq_cunanan.jpg" alt="Louise Cunanan">
+          <img class="aq-about-card-photo is-2d" src="/assets/dev/images/aq_cunanan_2d.png" alt="Louise Cunanan 2D">
           <div class="aq-about-card-overlay"></div>
         </div>
         <div class="aq-about-card-body">
-          <h3>Marco Santos</h3>
+          <h3>Louise Cunanan</h3>
+          <p class="aq-about-card-role">Animator and 2D and 3D Artist: Characters</p>
+          <div class="aq-about-card-divider"></div>
+          <p class="aq-about-card-desc">
+            Louise designs and creates character visuals in both 2D and 3D, then brings them to life through animations like movement, attacks, and expressions. Her work gives personality and emotion to the characters, making them feel real and relatable to players.
+          </p>
+        </div>
+      </article>
+
+      <article class="aq-about-card">
+        <div class="aq-about-card-media">
+          <img class="aq-about-card-photo is-real" src="/assets/dev/images/aq_giron.jpg" alt="Petercen Giron">
+          <img class="aq-about-card-photo is-2d" src="/assets/dev/images/aq_giron_2d.png" alt="Petercen Giron 2D">
+          <div class="aq-about-card-overlay"></div>
+        </div>
+        <div class="aq-about-card-body">
+          <h3>Petercen Giron</h3>
           <p class="aq-about-card-role">Lead Programmer</p>
           <div class="aq-about-card-divider"></div>
           <p class="aq-about-card-desc">
-            Marco is the technical backbone of the team, responsible for engineering the mobile game architecture in Unity for Android.
-            From implementing the day-cycle system and AI behavior to optimizing performance on low-end devices, Marco ensures that
-            the game runs smoothly and the systems support the vision of the design.
+            Petercen handles the core game logic, systems, and mechanics, ensuring everything functions properly while guiding other programmers and integrating assets into the game. His work is crucial in turning the team's creative vision into a playable experience, making sure that the game runs smoothly and is enjoyable for players.
           </p>
         </div>
       </article>
 
       <article class="aq-about-card">
         <div class="aq-about-card-media">
-          <img src="https://images.unsplash.com/photo-1732210038531-9cefab37885a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Sofia Cruz">
+          <img class="aq-about-card-photo is-real" src="/assets/dev/images/aq_montesa.jpg" alt="Elaine Montesa">
+          <img class="aq-about-card-photo is-2d" src="/assets/dev/images/aq_montesa_2d.png" alt="Elaine Montesa 2D">
           <div class="aq-about-card-overlay"></div>
         </div>
         <div class="aq-about-card-body">
-          <h3>Sofia Cruz</h3>
-          <p class="aq-about-card-role">3D Artist &amp; Environment Designer</p>
+          <h3>Elaine Montesa</h3>
+          <p class="aq-about-card-role">Narrative Writer and 3D Artist: Environments</p>
           <div class="aq-about-card-divider"></div>
           <p class="aq-about-card-desc">
-            Sofia brings Metro Manila to life through stunning 3D environment design. She is responsible for modeling
-            and texturing the four in-game stages — from the smogged-out Tondo-inspired district to the ruined heart
-            of the city. Her work captures the devastating beauty of a world that is both broken and worth saving.
-          </p>
-        </div>
-      </article>
-
-      <article class="aq-about-card">
-        <div class="aq-about-card-media">
-          <img src="https://images.unsplash.com/photo-1762708550141-2688121b9ebd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Diego Lim">
-          <div class="aq-about-card-overlay"></div>
-        </div>
-        <div class="aq-about-card-body">
-          <h3>Diego Lim</h3>
-          <p class="aq-about-card-role">2D Artist &amp; Narrative Writer</p>
-          <div class="aq-about-card-divider"></div>
-          <p class="aq-about-card-desc">
-            Diego is the visual heart of Alas Quatro, crafting the 2D character designs, enemy concepts, and UI artwork
-            that define the game's aesthetic. As Narrative Writer, he also authored the story of Kaya's redemption,
-            weaving Filipino mythology with environmental advocacy into a deeply human tale of consequence and healing.
+            Elaine develops the game’s story, dialogue, and lore, while also designing and modeling immersive 3D environments that match the narrative. Her writing creates the emotional core of the game, giving players a reason to care about the world and its characters, while her environment art builds the atmospheric settings that players will explore throughout their journey.
           </p>
         </div>
       </article>
