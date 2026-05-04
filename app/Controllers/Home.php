@@ -13,4 +13,9 @@ class Home extends BaseController
     {
         return view('pages/aq_collections');
     }
+
+    public function about(): string
+    {
+        return view('pages/aq_about');
+    }
 }

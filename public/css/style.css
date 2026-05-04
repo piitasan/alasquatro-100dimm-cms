@@ -1232,3 +1232,280 @@ a {
         width: 100%;
     }
 }
+
+/* About page */
+.aq-about-hero {
+  background: #1a3635;
+  padding: 56px 0 80px;
+}
+
+.aq-about-hero-card {
+  border: 2px solid rgba(213, 189, 152, 0.5);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #0f2322;
+}
+
+.aq-about-hero-titlebar {
+  text-align: center;
+  padding: 28px 18px;
+  background: rgba(213, 189, 152, 0.06);
+  border-bottom: 1px solid rgba(213, 189, 152, 0.25);
+}
+
+.aq-about-hero-titlebar h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(34px, 6vw, 56px);
+  letter-spacing: 0.06em;
+  color: var(--gold);
+}
+
+.aq-about-hero-titlebar p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: rgba(213, 189, 152, 0.6);
+  font-style: italic;
+}
+
+.aq-about-hero-photo {
+  position: relative;
+  height: 360px;
+  background: #0f2322;
+  overflow: hidden;
+}
+
+.aq-about-hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.aq-about-hero-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26, 54, 53, 0.85) 0%, rgba(26, 54, 53, 0.1) 60%);
+}
+
+.aq-about-hero-label {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  padding: 6px 14px;
+  border: 1px solid rgba(213, 189, 152, 0.5);
+  color: var(--gold);
+  background: rgba(26, 54, 53, 0.7);
+  width: fit-content;
+}
+
+.aq-about-who {
+  background: #40534d;
+  padding: 56px 0 80px;
+}
+
+.aq-about-who-card {
+  border: 1px solid rgba(213, 189, 152, 0.25);
+  background: rgba(26, 54, 53, 0.4);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.aq-about-who-copy h2 {
+  margin: 0 0 18px;
+  font-family: var(--font-heading);
+  color: var(--gold);
+  font-size: clamp(30px, 5vw, 50px);
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.aq-about-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.aq-about-divider span {
+  width: 56px;
+  height: 1px;
+  background: rgba(213, 189, 152, 0.4);
+}
+
+.aq-about-divider .dot {
+  width: 8px;
+  height: 8px;
+  background: var(--gold);
+  transform: rotate(45deg);
+}
+
+.aq-about-who-copy p {
+  margin: 0 0 14px;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 14px;
+  color: rgba(255, 246, 239, 0.85);
+}
+
+.aq-about-who-copy em {
+  color: var(--gold);
+}
+
+.aq-about-pillars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.aq-about-pillar {
+  border: 1px solid rgba(213, 189, 152, 0.25);
+  background: rgba(26, 54, 53, 0.5);
+  border-radius: 14px;
+  padding: 22px;
+  text-align: center;
+}
+
+.aq-about-pillar h3 {
+  margin: 0 0 12px;
+  font-family: var(--font-heading);
+  font-size: 28px;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+}
+
+.aq-about-pillar-divider {
+  height: 1px;
+  background: rgba(213, 189, 152, 0.25);
+  margin: 0 0 12px;
+}
+
+.aq-about-pillar p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.8;
+  color: rgba(255, 246, 239, 0.8);
+}
+
+.aq-about-team {
+  background: #1a3635;
+  padding: 60px 0 96px;
+}
+
+.aq-about-team-title {
+  text-align: center;
+  margin: 0 0 28px;
+  font-family: var(--font-heading);
+  color: var(--gold);
+  font-size: clamp(30px, 5vw, 52px);
+  letter-spacing: 0.1em;
+}
+
+.aq-about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.aq-about-card {
+  border: 1.5px solid rgba(213, 189, 152, 0.35);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #40534d;
+  transition: transform 0.3s ease;
+}
+
+.aq-about-card:hover {
+  transform: translateY(-4px);
+}
+
+.aq-about-card-media {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.aq-about-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.aq-about-card:hover .aq-about-card-media img {
+  transform: scale(1.05);
+}
+
+.aq-about-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(64, 83, 77, 1) 0%, rgba(64, 83, 77, 0) 50%);
+}
+
+.aq-about-card-body {
+  padding: 16px;
+}
+
+.aq-about-card-body h3 {
+  margin: 0 0 4px;
+  font-family: var(--font-heading);
+  letter-spacing: 0.05em;
+  color: var(--gold);
+  font-size: 20px;
+}
+
+.aq-about-card-role {
+  margin: 0 0 10px;
+  font-size: 12px;
+  color: rgba(213, 189, 152, 0.65);
+  font-style: italic;
+}
+
+.aq-about-card-divider {
+  height: 1px;
+  background: rgba(213, 189, 152, 0.2);
+  margin-bottom: 10px;
+}
+
+.aq-about-card-desc {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: rgba(255, 246, 239, 0.7);
+}
+
+/* About responsive */
+@media (max-width: 900px) {
+  .aq-about-team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .aq-about-pillars {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .aq-about-hero-photo {
+    height: 240px;
+  }
+
+  .aq-about-who-card {
+    padding: 24px 18px;
+  }
+
+  .aq-about-team-grid {
+    grid-template-columns: 1fr;
+  }
+}
