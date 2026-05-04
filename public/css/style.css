@@ -1534,3 +1534,454 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* Contact page */
+.aq-contact-hero {
+  padding: 64px 0;
+  background: linear-gradient(180deg, #0f2322 0%, #1a3635 100%);
+  border-bottom: 1px solid rgba(213, 189, 152, 0.2);
+  text-align: center;
+}
+
+.aq-contact-title {
+  margin: 0 0 16px;
+  font-family: var(--font-heading);
+  color: var(--gold);
+  font-size: clamp(34px, 6vw, 64px);
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+
+.aq-contact-title span {
+  display: block;
+  color: var(--text);
+}
+
+.aq-contact-sub {
+  margin: 0 auto;
+  max-width: 560px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 246, 239, 0.65);
+}
+
+.aq-contact-form {
+  padding: 56px 0 80px;
+  background: #1a3635;
+}
+
+.aq-contact-card {
+  max-width: 520px;
+  margin: 0 auto;
+  background: var(--gold);
+  border-radius: 16px;
+  border: 1.5px solid rgba(213, 189, 152, 0.35);
+  padding: 24px;
+}
+
+.aq-contact-form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.aq-contact-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.aq-contact-field input,
+.aq-contact-field textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1.5px solid rgba(26, 54, 53, 0.45);
+  background: transparent;
+  color: #1a3635;
+  font-family: var(--font-body);
+  font-size: 14px;
+  outline: none;
+}
+
+.aq-contact-field textarea {
+  resize: vertical;
+}
+
+.aq-contact-field input:focus,
+.aq-contact-field textarea:focus {
+  border-color: #1a3635;
+}
+
+.aq-contact-check {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 13px;
+  color: #1a3635;
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+.aq-contact-check input {
+  accent-color: #1a3635;
+  margin-top: 2px;
+}
+
+.aq-contact-check a {
+  color: #1a3635;
+  text-decoration: underline;
+}
+
+.aq-contact-submit {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #1a3635;
+  color: var(--gold);
+  font-family: var(--font-heading);
+  letter-spacing: 0.12em;
+  font-size: 12px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 15px rgba(26, 54, 53, 0.4);
+}
+
+.aq-contact-submit:hover {
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
+.aq-contact-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 4px 0 0;
+  color: rgba(26, 54, 53, 0.5);
+  font-size: 12px;
+}
+
+.aq-contact-divider span {
+  flex: 1;
+  height: 1px;
+  background: rgba(26, 54, 53, 0.25);
+}
+
+.aq-contact-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aq-contact-social {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  background: #1a3635;
+  color: var(--text);
+  font-family: var(--font-heading);
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  transition: opacity 0.2s ease;
+}
+
+.aq-contact-social:hover {
+  opacity: 0.9;
+}
+
+/* Contact responsive */
+@media (max-width: 640px) {
+  .aq-contact-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Privacy page */
+.aq-privacy-hero {
+  padding: 64px 0;
+  background: linear-gradient(180deg, #0f2322 0%, #1a3635 100%);
+  border-bottom: 1px solid rgba(213, 189, 152, 0.2);
+  text-align: center;
+}
+
+.aq-privacy-badge {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 14px;
+  border-radius: 999px;
+  border: 2px solid rgba(213, 189, 152, 0.5);
+  background: rgba(213, 189, 152, 0.08);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 22px;
+}
+
+.aq-privacy-title {
+  margin: 0 0 8px;
+  font-family: var(--font-heading);
+  color: var(--gold);
+  font-size: clamp(34px, 6vw, 56px);
+  letter-spacing: 0.06em;
+}
+
+.aq-privacy-meta {
+  margin: 0;
+  color: rgba(255, 246, 239, 0.55);
+  font-size: 12px;
+}
+
+.aq-privacy-sub {
+  margin: 16px auto 0;
+  max-width: 560px;
+  color: rgba(255, 246, 239, 0.65);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.aq-privacy-body {
+  padding: 48px 0 72px;
+  background: #1a3635;
+}
+
+.aq-privacy-card {
+  border: 1px solid rgba(213, 189, 152, 0.25);
+  background: #40534d;
+  border-radius: 12px;
+  padding: 28px 24px;
+}
+
+.aq-privacy-section h2 {
+  margin: 0 0 12px;
+  font-family: var(--font-heading);
+  color: var(--gold);
+  font-size: clamp(20px, 4vw, 28px);
+  letter-spacing: 0.05em;
+}
+
+.aq-privacy-section p {
+  margin: 0 0 10px;
+  color: rgba(255, 246, 239, 0.8);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.aq-privacy-divider {
+  height: 1px;
+  background: rgba(213, 189, 152, 0.15);
+  margin: 22px 0;
+}
+
+.aq-privacy-links {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aq-privacy-link {
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.aq-privacy-link-ghost {
+  border: 1px solid rgba(213, 189, 152, 0.4);
+  color: var(--gold);
+}
+
+.aq-privacy-link-solid {
+  background: var(--gold);
+  color: #1a3635;
+}
+
+.aq-privacy-link:hover {
+  opacity: 0.9;
+}
+
+/* Sign up page */
+.aq-signup {
+  position: relative;
+  min-height: calc(100vh - 70px);
+  background: #1a3635;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 16px;
+  overflow: hidden;
+}
+
+.aq-signup-bg::before,
+.aq-signup-bg::after {
+  content: '';
+  position: absolute;
+  border-radius: 999px;
+  background: #d5bd98;
+  opacity: 0.1;
+}
+
+.aq-signup-bg::before {
+  width: 380px;
+  height: 380px;
+  top: -140px;
+  left: -120px;
+}
+
+.aq-signup-bg::after {
+  width: 280px;
+  height: 280px;
+  bottom: -80px;
+  right: -60px;
+  opacity: 0.06;
+}
+
+.aq-signup-shell {
+  position: relative;
+  width: min(420px, 100%);
+  z-index: 1;
+}
+
+.aq-signup-brand {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.aq-signup-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 12px;
+  border-radius: 999px;
+  border: 2px solid var(--gold);
+  background: rgba(213, 189, 152, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aq-signup-brand h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  font-size: 30px;
+}
+
+.aq-signup-brand p {
+  margin: 6px 0 0;
+  color: rgba(255, 246, 239, 0.5);
+  font-size: 13px;
+}
+
+.aq-signup-card {
+  background: #40534d;
+  border: 1px solid rgba(213, 189, 152, 0.3);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.aq-signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.aq-signup-field label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: var(--font-heading);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+}
+
+.aq-signup-field input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1.5px solid rgba(213, 189, 152, 0.35);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  outline: none;
+}
+
+.aq-signup-field input:focus {
+  border-color: var(--gold);
+}
+
+.aq-signup-input-wrap {
+  position: relative;
+}
+
+.aq-signup-input-wrap input {
+  padding-right: 44px;
+}
+
+.aq-signup-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(213, 189, 152, 0.6);
+  cursor: pointer;
+}
+
+.aq-signup-submit {
+  margin-top: 6px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: var(--gold);
+  color: #1a3635;
+  font-family: var(--font-heading);
+  letter-spacing: 0.12em;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(213, 189, 152, 0.25);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.aq-signup-submit:hover {
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
+.aq-signup-meta {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 246, 239, 0.55);
+}
+
+.aq-signup-meta a {
+  color: var(--gold);
+}
+
+.aq-signup-back {
+  text-align: center;
+  margin-top: 14px;
+}
+
+.aq-signup-back a {
+  font-size: 12px;
+  color: rgba(213, 189, 152, 0.5);
+}
+
+.aq-signup-back a:hover {
+  color: var(--gold);
+}

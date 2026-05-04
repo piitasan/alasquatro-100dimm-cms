@@ -18,4 +18,19 @@ class Home extends BaseController
     {
         return view('pages/aq_about');
     }
+
+    public function contact(): string
+    {
+        return view('pages/aq_contact');
+    }
+
+    public function privacy(): string
+    {
+        return view('pages/aq_privacy');
+    }
+
+    public function signup(): string
+    {
+        return view('auth/aq_signup');
+    }
 }

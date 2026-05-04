@@ -7,6 +7,7 @@
     'contact' => 'Contact Us',
     'signin' => 'Sign In',
     'signup' => 'Sign Up',
+    'privacy' => 'Privacy Policy',
   ];
   $pageTitle = $titles[$currentPath] ?? 'Alas Quatro';
 ?>
