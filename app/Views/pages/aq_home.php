@@ -3,7 +3,7 @@
 <section class="aq-hero">
   <div class="aq-hero-media" aria-hidden="true">
     <video class="aq-hero-trailer" preload="metadata" playsinline>
-      <source src="/assets/videos/Alas%20Quatro%20-%20Intro.mp4" type="video/mp4">
+      <source src="/assets/videos/aq_intro_compressed.mp4" type="video/mp4">
     </video>
   </div>
   <div class="aq-hero-overlay" aria-hidden="true"></div>
