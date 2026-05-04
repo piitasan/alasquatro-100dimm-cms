@@ -8,4 +8,9 @@ class Home extends BaseController
     {
         return view('pages/aq_home');
     }
+
+    public function collection(): string
+    {
+        return view('pages/aq_collections');
+    }
 }
