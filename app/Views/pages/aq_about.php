@@ -111,7 +111,7 @@
         </div>
         <div class="aq-about-card-body">
           <h3>Petercen Giron</h3>
-          <p class="aq-about-card-role">Lead Programmer</p>
+          <p class="aq-about-card-role">Lead Programmer & Lead Full Stack Developer</p>
           <div class="aq-about-card-divider"></div>
           <p class="aq-about-card-desc">
             Petercen handles the core game logic, systems, and mechanics, ensuring everything functions properly while guiding other programmers and integrating assets into the game. His work is crucial in turning the team's creative vision into a playable experience, making sure that the game runs smoothly and is enjoyable for players.

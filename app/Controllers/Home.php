@@ -33,4 +33,9 @@ class Home extends BaseController
     {
         return view('auth/aq_signup');
     }
+
+    public function signin(): string
+    {
+        return view('auth/aq_signin');
+    }
 }

@@ -1985,3 +1985,182 @@ a {
 .aq-signup-back a:hover {
   color: var(--gold);
 }
+
+/* Sign in page */
+.aq-signin {
+  position: relative;
+  min-height: calc(100vh - 70px);
+  background: #1a3635;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 16px;
+  overflow: hidden;
+}
+
+.aq-signin-bg::before,
+.aq-signin-bg::after {
+  content: '';
+  position: absolute;
+  border-radius: 999px;
+  background: #d5bd98;
+  opacity: 0.1;
+}
+
+.aq-signin-bg::before {
+  width: 380px;
+  height: 380px;
+  top: -120px;
+  right: -120px;
+}
+
+.aq-signin-bg::after {
+  width: 300px;
+  height: 300px;
+  bottom: -120px;
+  left: -120px;
+  opacity: 0.06;
+}
+
+.aq-signin-shell {
+  position: relative;
+  width: min(420px, 100%);
+  z-index: 1;
+}
+
+.aq-signin-brand {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.aq-signin-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 12px;
+  border-radius: 999px;
+  border: 2px solid var(--gold);
+  background: rgba(213, 189, 152, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aq-signin-brand h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  font-size: 30px;
+}
+
+.aq-signin-brand p {
+  margin: 6px 0 0;
+  color: rgba(255, 246, 239, 0.5);
+  font-size: 13px;
+}
+
+.aq-signin-card {
+  background: #40534d;
+  border: 1px solid rgba(213, 189, 152, 0.3);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.aq-signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.aq-signin-field label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: var(--font-heading);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+}
+
+.aq-signin-field input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1.5px solid rgba(213, 189, 152, 0.35);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  outline: none;
+}
+
+.aq-signin-field input:focus {
+  border-color: var(--gold);
+}
+
+.aq-signin-input-wrap {
+  position: relative;
+}
+
+.aq-signin-input-wrap input {
+  padding-right: 44px;
+}
+
+.aq-signin-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(213, 189, 152, 0.6);
+  cursor: pointer;
+}
+
+.aq-signin-submit {
+  margin-top: 6px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: var(--gold);
+  color: #1a3635;
+  font-family: var(--font-heading);
+  letter-spacing: 0.12em;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(213, 189, 152, 0.25);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.aq-signin-submit:hover {
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
+.aq-signin-meta {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 246, 239, 0.55);
+}
+
+.aq-signin-meta a {
+  color: var(--gold);
+}
+
+.aq-signin-back {
+  text-align: center;
+  margin-top: 14px;
+}
+
+.aq-signin-back a {
+  font-size: 12px;
+  color: rgba(213, 189, 152, 0.5);
+}
+
+.aq-signin-back a:hover {
+  color: var(--gold);
+}

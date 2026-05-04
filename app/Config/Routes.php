@@ -12,3 +12,6 @@ $routes->get('/contact', 'Home::contact');
 $routes->get('/privacy', 'Home::privacy');
 $routes->get('/signup', 'Home::signup');
 $routes->get('/signin', 'Home::signin');
+
+$routes->get('/admin', 'Admin::auth');
+$routes->get('/admin/dashboard', 'Admin::dashboard');
