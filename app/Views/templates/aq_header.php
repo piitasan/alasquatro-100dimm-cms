@@ -1,11 +1,28 @@
+<?php
+  $currentPath = trim(service('uri')->getPath(), '/');
+  $titles = [
+    '' => 'Home',
+    'collection' => 'Collections',
+    'about' => 'About Us',
+    'contact' => 'Contact Us',
+    'signin' => 'Sign In',
+    'signup' => 'Sign Up',
+  ];
+  $pageTitle = $titles[$currentPath] ?? 'Alas Quatro';
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alas Quatro</title>
+  <title>Alas Quatro | <?= htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') ?></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/assets/images/aq_web_icon_base.png" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/aq_web_icon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/aq_web_icon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/aq_web_apple-touch-icon.png">
 </head>
 <body>
   <?php $currentPath = trim(service('uri')->getPath(), '/'); ?>

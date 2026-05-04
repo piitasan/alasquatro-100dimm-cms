@@ -11,7 +11,7 @@
       </div>
 
       <div class="aq-about-hero-photo">
-        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1200" alt="Alas Quatro Team">
+        <img src="/assets/dev/images/aq_grp.jpg" alt="Alas Quatro Team">
         <div class="aq-about-hero-photo-overlay"></div>
         <div class="aq-about-hero-label">THE TEAM — ALAS QUATRO</div>
       </div>
