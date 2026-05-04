@@ -6,7 +6,16 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('pages/aq_home');
+        $videoModel = new \App\Models\HeroVideoModel();
+        $currentVideo = $videoModel->where('is_active', 1)->orderBy('created_at', 'DESC')->first();
+
+        $heroVideoUrl = $currentVideo
+            ? base_url('media/hero-video/' . $currentVideo['stored_name'])
+            : base_url('assets/videos/aq_intro_compressed.mp4');
+
+        return view('pages/aq_home', [
+            'heroVideoUrl' => $heroVideoUrl,
+        ]);
     }
 
     public function collection(): string

@@ -15,3 +15,8 @@ $routes->get('/signin', 'Home::signin');
 
 $routes->get('/admin', 'Admin::auth');
 $routes->get('/admin/dashboard', 'Admin::dashboard');
+$routes->post('/admin/login', 'Admin::login');
+$routes->get('/admin/video', 'Admin::heroVideo');
+$routes->post('/admin/video', 'Admin::updateHeroVideo');
+
+$routes->get('/media/hero-video/(:segment)', 'Media::heroVideo/$1');
