@@ -87,6 +87,7 @@
             </div>
             <span class="aq-doc-badge"><i class="bi bi-geo-alt-fill"></i></span>
           </div>
+          <div class="aq-doc-preview-divider"></div>
           <div class="aq-doc-lines">
             <span></span>
             <span></span>
@@ -102,11 +103,6 @@
             <span></span>
           </div>
         </div>
-      </div>
-      <div class="aq-doc-card-cta">
-        <span>VIEW GAME DESIGN DOCUMENT</span>
-        <span class="aq-doc-card-note">Opens as PDF</span>
-        <i class="bi bi-arrow-right"></i>
       </div>
       <div class="aq-doc-hover" aria-hidden="true">
         <div class="aq-doc-hover-icon"><i class="bi bi-eye"></i></div>
